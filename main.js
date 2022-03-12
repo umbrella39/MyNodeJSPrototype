@@ -1,6 +1,9 @@
-// Hello, Node.js World
-// Sample:https://nodejs.org/ja/about/
+'use strict';
+
+// Hello, Node.js World Sample:https://nodejs.org/ja/about/
 const http = require('http');
+// DB Operation(by using Test or Prototyping)
+const db = require('./plugins/testDbFunc.js');
 
 const hostname = '127.0.0.1';
 const port = 3000;
