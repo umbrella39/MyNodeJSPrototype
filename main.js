@@ -1,14 +1,12 @@
 'use strict';
 
-// Hello, Node.js World Sample:https://nodejs.org/ja/about/
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
+// http config(by using Test or Prototyping)
+const hp = require('./config.js');
 
 // DB Operation(by using Test or Prototyping)
 const db = require('./plugins/testDbFunc.js');
 
-const server = http.createServer((req, res) => {
+const server = hp.http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain;charset=utf-8');
   console.log(db.thisResult);
@@ -18,6 +16,6 @@ const server = http.createServer((req, res) => {
   res.end(db.thisResult);
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(hp.port, hp.hostname, () => {
+  console.log(`Server running at http://${hp.hostname}:${hp.port}/`);
 });
