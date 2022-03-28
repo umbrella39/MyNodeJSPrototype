@@ -9,11 +9,18 @@ const db = require('./plugins/testDbFunc.js');
 const server = hp.http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain;charset=utf-8');
+  
+  // Test Log
   console.log(db.thisResult);
-//  res.write(db.res.rows[0].user_name);
-//  res.write('<meta charset="UTF-8">');
-//  res.end('Hello World');
-  res.end(db.thisResult);
+  // Array is not empty: Display Array
+  if (db.thisResult.length) {
+    for (let i = 0; i < db.thisResult.length; i++) {
+      res.write(db.thisResult[i].output)
+      res.write('\n')
+    }
+  }
+
+  res.end();
 });
 
 server.listen(hp.port, hp.hostname, () => {

@@ -13,7 +13,7 @@ dbConnect.client.connect()
 
 dbConnect.client.query(dbConnect.SQL_STATEMENT, (err, res) => {
 //  console.log(err, res)
-  exports.thisResult = res.rows[0].user_name
+  exports.thisResult = res.rows
   //console.log(thisResult)
   dbConnect.client.end()
 })
