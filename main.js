@@ -3,8 +3,8 @@
 // http config(by using Test or Prototyping)
 const hp = require('./config.js');
 
-// DB Operation(by using Test or Prototyping)
-const db = require('./plugins/testDbFunc.js');
+// Postgres DB Operation(by using Test or Prototyping)
+const pdb = require('./plugins/PostgresDbCon.js');
 
 const server = hp.http.createServer((req, res) => {
   res.statusCode = 200;
