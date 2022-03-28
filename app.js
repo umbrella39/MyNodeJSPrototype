@@ -11,11 +11,11 @@ const server = hp.http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain;charset=utf-8');
   
   // Test Log
-  console.log(db.thisResult);
+  console.log(pdb.thisResult);
   // Array is not empty: Display Array
-  if (db.thisResult.length) {
-    for (let i = 0; i < db.thisResult.length; i++) {
-      res.write(db.thisResult[i].output)
+  if (pdb.thisResult.length) {
+    for (let i = 0; i < pdb.thisResult.length; i++) {
+      res.write(pdb.thisResult[i].output)
       res.write('\n')
     }
   }
