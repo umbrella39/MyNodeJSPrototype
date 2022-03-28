@@ -1,5 +1,6 @@
 config.js
-dbConfig.js
+pdbConfig.js
+mdbConfig.js
 
 # Logs
 logs

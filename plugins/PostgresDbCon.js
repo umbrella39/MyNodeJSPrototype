@@ -2,7 +2,7 @@
 // include pg
 const { Pool, Client } = require('pg')
 // DB Connect Info(by using Test or Prototyping)
-const dbConnect = require('./dbConfig.js');
+const dbConnect = require('./pdbConfig.js');
 
 dbConnect.pool.query(dbConnect.SQL_STATEMENT, (err, res) => {
     //console.log(err, res)
