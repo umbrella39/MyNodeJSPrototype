@@ -6,6 +6,9 @@ const hp = require('./config.js');
 // Postgres DB Operation(by using Test or Prototyping)
 const pdb = require('./plugins/PostgresDbCon.js');
 
+// MySQL DB Operation(by using Test or Prototyping)
+// const mdb = require('./plugins/MyDbCon.js');
+
 const server = hp.http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain;charset=utf-8');
