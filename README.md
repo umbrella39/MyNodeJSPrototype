@@ -1,10 +1,9 @@
 # MyNodeJSPrototype
-Node.js for prototyping_private
+Node.js ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ”ãƒ³ã‚°ç”¨
+* Postgresæ¥ç¶šãƒ†ã‚¹ãƒˆç”¨ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«(pgï¼šnode-postgresãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«åˆ©ç”¨)
+* mysqlæ¥ç¶šãƒ†ã‚¹ãƒˆç”¨ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«(pgï¼šnode-postgresãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«åˆ©ç”¨)ï¼ˆæœªç€æ‰‹ï¼‰
 
-## node_modulesg—p‹@”\
-* node-postgres
-cPostgreSQL‚ÅDB‘€ì‚ğ‚µ‚½‚¢‚½‚ß‚É“ü‚ê‚½
-## QlŒ³
-Œö®(‹@”\’ñ‹ŸŒ³)‚µ‚©M—p‚·‚é‚È
-* https://nodejs.org/ja/
-* https://node-postgres.com/
+## node_modules_used
+* http
+* node-postgres(pg)
+* mysql
