@@ -1,16 +1,18 @@
 'use strict';
 // include mysql
-const { Pool, Client } = require('mysql')
+const mysql = require('mysql')
 // DB Connect Info(by using Test or Prototyping)
-const dbConnect = require('./mdbConfig.js');
+const con = require('./mdbConfig.js');
+const dbConnect = con.connection;
 
-dbConnect.pool.query(dbConnect.SQL_STATEMENT, (err, res) => {
+dbConnect.query(dbConnect.SQL_STATEMENT, (err, res) => {
     dbConnect.pool.end()
 })
 
-dbConnect.client.connect()
+dbConnect.connect()
 
-dbConnect.client.query(dbConnect.SQL_STATEMENT, (err, res) => {
+dbConnect.query(dbConnect.SQL_STATEMENT, (err, res) => {
   exports.thisResult = res.rows
-  dbConnect.client.end()
 })
+
+dbConnect.client.end();
